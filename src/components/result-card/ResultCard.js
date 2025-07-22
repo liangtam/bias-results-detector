@@ -17,10 +17,10 @@ const ResultCard = () => {
                 { data &&
                     (() => {
                         const score = round(data.data.offensiveness_score);
-                        if (score > 75) {
+                        if (score > 80) {
                             return <h1>#Cancelled</h1>;
-                        } else if (score > 50) {
-                            return <h2>Suspicious</h2>;
+                        } else if (score > 70) {
+                            return <h2>Suspicious...</h2>;
                         } else {
                             return <h2>You're good.</h2>;
                         }
@@ -38,9 +38,9 @@ const ResultCard = () => {
                             {
                                 (() => {
                                     const score = round(data.data.offensiveness_score);
-                                    if (score > 85) {
+                                    if (score > 80) {
                                         return <div>Go to the corner and reflect on yourself. How can you be this rude?</div>;
-                                    } else if (score > 75) {
+                                    } else if (score > 70) {
                                         return <div>You seem to be implying something... 😒</div>;
                                     } else {
                                         return <div>Nothing suspicious here. You are dismissed.</div>;

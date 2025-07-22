@@ -21,6 +21,6 @@
 }
 
 .container button:disabled {
-    cursor: default;
+    /*cursor: default;*/
     opacity: 50%;
 }

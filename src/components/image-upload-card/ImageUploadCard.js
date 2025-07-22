@@ -1,9 +1,7 @@
 import {useDropzone} from "react-dropzone";
 import styles from "./ImageUploadCard.module.css"
 import {useState} from "react";
-import axios from "axios";
 import {usePhraseContext} from "../../hooks/usePhraseContext";
-import {useResultsContext} from "../../hooks/useResultsContext";
 import imgIcon from '../../assets/images/icons8-picture-256.png'
 
 const ImageUploadCard = ({handleResponse}) => {
