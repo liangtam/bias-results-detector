@@ -24,7 +24,7 @@ const Button = () => {
                 }
             );
             console.log("Successfully called API: ", response)
-            setData(response.data.offensiveness_score)
+            setData(response)
         } catch (err) {
             console.error("API call failed: ", err);
         }
@@ -32,7 +32,7 @@ const Button = () => {
 
     return (
         <div className={styles["container"]}>
-            <button onClick={handleSubmit}>Submit</button>
+            <button onClick={handleSubmit} disabled={phrase.phrase === "" || phrase.image == null}>Submit</button>
         </div>
     )
 }

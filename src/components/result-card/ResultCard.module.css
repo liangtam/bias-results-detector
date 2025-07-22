@@ -1,3 +1,52 @@
 .container {
     background: var(--blue);
+    background-image: url("../../assets/images/neotek-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 10px;
+    width: 50%;
+    height: 300px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.title {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    background: var(--white);
+    color: black;
+}
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.score-num {
+    margin: 0;
+    color: #fcb6ff;
+    font-size: 32px;
+}
+
+.judgment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-size: 18px;
 }

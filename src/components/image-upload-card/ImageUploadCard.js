@@ -4,6 +4,7 @@ import {useState} from "react";
 import axios from "axios";
 import {usePhraseContext} from "../../hooks/usePhraseContext";
 import {useResultsContext} from "../../hooks/useResultsContext";
+import imgIcon from '../../assets/images/icons8-picture-256.png'
 
 const ImageUploadCard = ({handleResponse}) => {
     const [imagePreview, setImagePreview] = useState(null)
@@ -29,9 +30,15 @@ const ImageUploadCard = ({handleResponse}) => {
         <div {...getRootProps()} className={styles["container"]}>
             <input {...getInputProps()}/>
             {isDragActive ? (
-                <p className={styles["drop-image"]}>Drop your image</p>
+                <div className={styles["drop-image"]}>
+                    Drop your image
+                    {!imagePreview && <img src={imgIcon}/>}
+                </div>
             ): (
-                <p className={styles["add-image"]}>Select or Drop image</p>
+                <div className={styles["add-image"]}>
+                    Select or Drop image
+                    {!imagePreview && <img src={imgIcon}/>}
+                </div>
             )}
             {imagePreview && <div className={styles["preview"]}>
                 <img src={imagePreview}/>

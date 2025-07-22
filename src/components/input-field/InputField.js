@@ -5,7 +5,7 @@ const InputField = () => {
 
     const handleChange = (e) => {
         e.preventDefault()
-        setPhrase(e.target.value)
+        setPhrase({...phrase, phrase: e.target.value})
     }
 
     return (
