@@ -1,6 +1,6 @@
 # Demo
 This project is to be ran simultaneously with offensive-combo-detector-be
-![refresh](https://github.com/user-attachments/assets/58d34d5b-ab47-4056-b90c-da4c460e6d74)
+![refresh-cropped](https://github.com/user-attachments/assets/1687f767-b652-4f65-b45b-dce156e01d59)
 
 
 
