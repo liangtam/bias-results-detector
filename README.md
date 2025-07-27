@@ -1,3 +1,9 @@
+# Demo
+This project is to be ran simultaneously with offensive-combo-detector-be
+![refresh](https://github.com/user-attachments/assets/58d34d5b-ab47-4056-b90c-da4c460e6d74)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
